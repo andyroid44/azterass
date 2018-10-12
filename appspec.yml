@@ -5,10 +5,10 @@ files:
     destination: /web/duniaku/test
 hooks:
   BeforeInstall:
-    - location: deploy/before_install
+    - location: /home/ubuntu/deploy/before_install
       timeout: 300
       runas: root
   AfterInstall:
-    - location: deploy/restart_server
+    - location: /home/ubuntu/deploy/restart_server
       timeout: 300
       runas: root
